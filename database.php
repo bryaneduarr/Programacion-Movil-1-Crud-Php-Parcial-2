@@ -21,7 +21,6 @@ class DataBase
 
       $this->conexion->exec("set names utf8");
 
-      echo "Conectado a la base de datos ";
     } catch (PDOException $exception) {
 
       echo "No se pudo conectar al a base datos: " . $exception->getMessage();
